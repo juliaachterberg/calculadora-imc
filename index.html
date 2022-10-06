@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculador De IMC</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="dark-theme">
+			<label for="switch" id="dm-label">
+				<input type="checkbox" id="switch">Dark Mode
+			</label>
+		</div>
+		<div class="principal">
+			<h1>Calculador de IMC</h1>
+			<form>	
+				<div class="inputs">
+					<div class="inputs-txt">
+						<label for="nome" class="imc-label">Nome:</label>
+						<input type="text" id="nome" placeholder=" Seu Nome"><br><br>
+						<label id="pesoLabel" for="peso" class="imc-label">Peso:</label>
+						<input type="text" id="peso" placeholder=" 80"><br><br>
+						<label for="altura" class="imc-label">Altura:</label>
+						<input type="text" id="altura" placeholder=" 1.75"><br><br>
+					</div>
+					<button type="button" id="start" class="start">Start</button>
+				</div>
+			</form>
+			<div class="resultado">
+				<p>Resultado: <span class="texto"></span></p>
+			</div>
+			<button type="reset" id="reset">Reset</button>
+			<p class="fim">
+				<br>Os numeros são arredondados.
+				<br>Se precisar de numeros precisos contate a admin.<br>
+				<br>Para fonte das metricas clicar <a id="link" href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html">aqui</a>.
+			</p>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
